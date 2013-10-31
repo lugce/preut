@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/estilos.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	<meta name="viewport" content="width=device-width" />
 	<title>Administración Preuniversitario Tarapacá</title>
 </head>
 <body>
@@ -14,11 +14,11 @@
 				<h1>Administracion <small>Secretaria</small></h1>
 			</div>
 
-			<p class="nvar-text pull-right">Maria Collao <a href="#" class="btn btn-primary">Cerrar</a></p>
+			<p class="nvar-text pull-right">Maria Collao <a href="#" class="btn btn-primary btn-small">Cerrar</a></p>
 
 			<div class="collapse navbar-collapse">
 				<ul class="nav nav-pills">
-					<li class="active"><a href="#">Administracion</a></li>
+					<li class="active"><a href="index.html">Administracion</a></li>
 					<li><a href="#">Financiera</a></li>
 					<li><a href="#">Noticias</a></li>
 					<li><a href="#">Academico</a></li>
@@ -30,35 +30,95 @@
 
 		<div class="col-md-3">
 			<a href="#" class="btn btn-info" id="btn-mensaje">Enviar Mensaje</a>
+
+			<div class="panel panel-info" id="informacion">
+				<div class="panel-heading">Panel de Información</div>
+				<div class="panel-body">
+					<table class="table">
+						<tr>
+							<td>Alumnos Matriculados</td>
+							<td class="badge pull-right">23</td>
+						</tr>
+						<tr>
+							<td>Cursos Creados:</td>
+							<td class="badge pull-right">10</td>
+						</tr>
+						<tr>
+							<td>Morosos detectados:</td>
+							<td class="badge pull-right">20</td>
+						</tr>
+					</table>
+				</div>
+			</div>
 		</div>
 		<div class="col-md-9">
-			<div class="panel panel-info">
+			<div class="panel panel-info" id="paneles">
 				<div class="panel-heading">Financiero</div>
+				
 				<div class="panel-body">
-					<a href="#">Matricular Alumno</a>
-					<a href="#">Generar PAgo</a>
-					<a href="#">Anular Pago</a>
-					<a href="#">Ver Morosos</a>
+					<a href="new_alumno.html">
+						<span class="icon-pencil"></span>
+						Matricular Alumno
+					</a>
+					<a href="#">
+						<span class="icon-credit"></span>
+						Generar Pago
+					</a>
+					<a href="#">
+						<span class="icon-calculate"></span>
+						Anular Pago
+					</a>
+					<a href="#">
+						<span class="icon-binoculars"></span>
+						Ver Morosos</a>
 				</div>
 			</div>
 
-			<div class="panel panel-info">
-				<div class="panel-heading">Financiero</div>
+			<div class="panel panel-info" id="paneles">
+				<div class="panel-heading">Noticias</div>
 				<div class="panel-body">
-					<a href="#">Matricular Alumno</a>
-					<a href="#">Generar PAgo</a>
-					<a href="#">Anular Pago</a>
-					<a href="#">Ver Morosos</a>
+					<a href="#">
+						<span class="icon-quill"></span>
+						Crear Noticia
+					</a>
+					<a href="#">
+						<span class="icon-wand"></span>
+						Editar Noticia
+					</a>
+					<a href="#">
+						<span class="icon-folder-open"></span>
+						Ver Noticias
+					</a>
+					<a href="#">
+						<span class="icon-remove"></span>
+						Eliminar Noticias
+					</a>
 				</div>
 			</div>
 
-			<div class="panel panel-info">
-				<div class="panel-heading">Financiero</div>
+			<div class="panel panel-info" id="paneles">
+				<div class="panel-heading">Academico</div>
 				<div class="panel-body">
-					<a href="#">Matricular Alumno</a>
-					<a href="#">Generar PAgo</a>
-					<a href="#">Anular Pago</a>
-					<a href="#">Ver Morosos</a>
+					<a href="#">
+						<span class="icon-calendar"></span>
+						Registrar Asistencia
+					</a>
+					<a href="#">
+						<span class="icon-download"></span>
+						Registrar Contenidos
+					</a>
+					<a href="#">
+						<span class="icon-download"></span>
+						Ingresar Resultados
+					</a>
+					<a href="#">
+						<span class="icon-users"></span>
+						Asignar Grupo
+					</a>
+					<a href="#">
+						<span class="icon-spinner"></span>
+						Cambiar Grupo
+					</a>
 				</div>
 			</div>
 		</div>
