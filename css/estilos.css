@@ -1,3 +1,4 @@
 @import "bootstrap.min.css";
 @import "normalize.css";
+#btn-mensaje{width:100%}
 .collapse{background:#eee;margin-top:5em}
