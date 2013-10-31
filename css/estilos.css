@@ -8,3 +8,5 @@ body{background:#f8f8f8}
 .collapse{background:#fff;margin-top:5em}
 .navbar{box-shadow:0 10px 10px #efefef}
 .row{padding:1.2em}
+.input-group{margin-bottom:12px;}
+.input-group .input-group-addon{font-size:12px}
