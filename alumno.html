@@ -29,7 +29,7 @@
 		<div class="col-md-3">
 			<a href="#" class="btn btn-info" id="btn-mensaje">Enviar Mensaje</a>
 
-			<div class="panel panel-info" id="informacion">
+			<div class="panel panel-primary" id="informacion">
 				<div class="panel-heading">Panel de Información</div>
 				<div class="panel-body">
 					<table class="table">
@@ -48,9 +48,14 @@
 					</table>
 				</div>
 			</div>
+
+			<div class="col-md-12 text-danger"><strong>Posee deuda</strong></div>
+			<div class="col-md-12 text-warning"><strong>Dentro de Fecha de Pago</strong></div>
+			<div class="col-md-12 text-success"><strong>No posee deuda</strong></div>
+
 		</div>
 		<div class="col-md-9">
-			<div class="panel panel-info" id="paneles">
+			<div class="panel panel-primary" id="paneles">
 				<div class="panel-heading">Financiero</div>
 				
 				<div class="panel-body">
@@ -58,7 +63,7 @@
 						<span class="icon-pencil"></span>
 						Matricular Alumno
 					</a>
-					<a href="#">
+					<a href="pago_alumno.html">
 						<span class="icon-credit"></span>
 						Generar Pago
 					</a>
@@ -67,8 +72,9 @@
 						Ver Morosos</a>
 				</div>
 			</div>
-			<table class="table table-hover">
+			<table class="table table-hover" id="tabla-alumnos">
 				<tr>
+					<th>Ver</th>
 					<th>Nombre</th>
 					<th>Rut</th>
 					<th>Plan</th>
@@ -76,6 +82,7 @@
 					<th></th>
 				</tr>
 				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Hugo Gallardo Flores</td>
 					<td>17.115.248-8</td>
 					<td>Fuerzas Armadas</td>
@@ -83,6 +90,7 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Daniela Villalobos Tapia</td>
 					<td>17.340.244-4</td>
 					<td>Completo / Diurno</td>
@@ -90,6 +98,7 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Renzo Flores Gonzales</td>
 					<td>17.115.120-2</td>
 					<td>Completo / Diurno</td>
@@ -97,6 +106,7 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Yordan Vera Castillo</td>
 					<td>17.258.132-5</td>
 					<td>Semestre / Nocturna</td>
@@ -104,6 +114,7 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Hugo Gallardo Flores</td>
 					<td>17.115.248-8</td>
 					<td>Fuerzas Armadas</td>
@@ -111,6 +122,7 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="warning">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Daniela Villalobos Tapia</td>
 					<td>17.340.244-4</td>
 					<td>Completo / Diurno</td>
@@ -118,6 +130,7 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="warning">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Renzo Flores Gonzales</td>
 					<td>17.115.120-2</td>
 					<td>Completo / Diurno</td>
@@ -125,6 +138,7 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Yordan Vera Castillo</td>
 					<td>17.258.132-5</td>
 					<td>Semestre / Nocturna</td>
@@ -132,6 +146,7 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Hugo Gallardo Flores</td>
 					<td>17.115.248-8</td>
 					<td>Fuerzas Armadas</td>
@@ -139,6 +154,7 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Daniela Villalobos Tapia</td>
 					<td>17.340.244-4</td>
 					<td>Completo / Diurno</td>
@@ -146,6 +162,7 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Renzo Flores Gonzales</td>
 					<td>17.115.120-2</td>
 					<td>Completo / Diurno</td>
@@ -153,6 +170,103 @@
 					<td><a href="#">Eliminar</a></td>
 				</tr>
 				<tr class="danger">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Yordan Vera Castillo</td>
+					<td>17.258.132-5</td>
+					<td>Semestre / Nocturna</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Hugo Gallardo Flores</td>
+					<td>17.115.248-8</td>
+					<td>Fuerzas Armadas</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Daniela Villalobos Tapia</td>
+					<td>17.340.244-4</td>
+					<td>Completo / Diurno</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Renzo Flores Gonzales</td>
+					<td>17.115.120-2</td>
+					<td>Completo / Diurno</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Yordan Vera Castillo</td>
+					<td>17.258.132-5</td>
+					<td>Semestre / Nocturna</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Hugo Gallardo Flores</td>
+					<td>17.115.248-8</td>
+					<td>Fuerzas Armadas</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="warning">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Daniela Villalobos Tapia</td>
+					<td>17.340.244-4</td>
+					<td>Completo / Diurno</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="warning">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Renzo Flores Gonzales</td>
+					<td>17.115.120-2</td>
+					<td>Completo / Diurno</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Yordan Vera Castillo</td>
+					<td>17.258.132-5</td>
+					<td>Semestre / Nocturna</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Hugo Gallardo Flores</td>
+					<td>17.115.248-8</td>
+					<td>Fuerzas Armadas</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Daniela Villalobos Tapia</td>
+					<td>17.340.244-4</td>
+					<td>Completo / Diurno</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="success">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
+					<td>Renzo Flores Gonzales</td>
+					<td>17.115.120-2</td>
+					<td>Completo / Diurno</td>
+					<td><a href="#">Modificar</a></td>
+					<td><a href="#">Eliminar</a></td>
+				</tr>
+				<tr class="danger">
+					<td><a href="#"><span class="icon-binoculars"></span></a></td>
 					<td>Yordan Vera Castillo</td>
 					<td>17.258.132-5</td>
 					<td>Semestre / Nocturna</td>
